@@ -1,6 +1,6 @@
 #!/bin/sh
-#Backup Databases MySQL C/ LOGS -- Criado por: Thiago Henrique Lopes
-#GITHUB- https://github.com/Th14go/Script-bck-MySQL
+#Backup Databases MySQL C/ LOGS -- Criado por: Thiago Lopes
+#GITHUB- https://github.com/Th14go/script-backup-mysql
 
 DATA=`date +%Y-%m-%d-%H.%M`
 
