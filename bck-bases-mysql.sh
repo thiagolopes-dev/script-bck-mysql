@@ -21,7 +21,7 @@ PASSWORD="suasenha"
 
 #DATABASES#
 DATABASE="fichas"
-DATABASE2="santacasa"
+DATABASE2="brcom"
 DATABASE3="oficio"
 DATABASE4="spark"
 DATABASE5="zabbix"
