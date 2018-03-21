@@ -1,5 +1,5 @@
 ![bashmini](https://user-images.githubusercontent.com/12428027/37692278-5515c1cc-2c96-11e8-9542-b4502ff6a310.png)
-<p align="center"># Script-Backup-Database-MySQL --<i>Th14go--</center> 
+<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--,/b></center> 
 
 <p align="justify">Script para backup de várias databases MySQL,o script contem informações em todo seu escopo,
 o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o backup de todas as
@@ -28,8 +28,7 @@ service crontab restart<br>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
-<b>#Script-Backup-Database-MySQL </b><br>
+<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--,/b></center> 
 
 <p align="justify">Script to backup multiple MySQL databases,the script contains information throughout its scope,
 the backup is performed using mysqldumb from the MySQL itself, after running the backup of all
@@ -37,11 +36,11 @@ databases, the compression process starts.Backup and compression LOG is generate
 the script afterwards, feel free to give tips and improve the script!</p>
 
 <b>Edit Variables</br>
-<b>#BCK SQL Variables#</br>
-<b>#MySQL Variables #</br>
-<b>#DATABASES#</br></b>
+#BCK SQL Variables#</br>
+#MySQL Variables #</br>
+#Databases#</br>
 
-<b>How to use.</b>
+<b>How to use.</br></b>
 
 #git clone https://github.com/Th14go/script-bck-mysql
 
