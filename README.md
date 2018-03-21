@@ -33,13 +33,13 @@ the script afterwards, feel free to
 to give tips and improve the script!
 
 Edit Variables
-# BCK SQL Variables
-# MySQL Variables #
-# DATABASES #
+#BCK SQL Variables #
+#MySQL Variables #
+#DATABASES#
 
 How to use.
 
-git clone https://github.com/Th14go/script-bck-mysql
+# git clone https://github.com/Th14go/script-bck-mysql
 
-./script-bck-mysql
+# ./script-bck-mysql
 
