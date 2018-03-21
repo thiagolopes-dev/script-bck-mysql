@@ -1,7 +1,7 @@
 ![bashmini](https://user-images.githubusercontent.com/12428027/37692278-5515c1cc-2c96-11e8-9542-b4502ff6a310.png)
 <p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> 
 
-<p align="justify">Script para backup de várias databases MySQL,o script contem informações em todo seu escopo,
+<p align="justify">Script para backup de várias databases MySQL do mesmo servidor,o script contem informações em todo seu escopo,
 o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o backup de todas as
 databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
@@ -28,7 +28,7 @@ service crontab restart<br>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--,/b></center> 
+<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> 
 
 <p align="justify">Script to backup multiple MySQL databases,the script contains information throughout its scope,
 the backup is performed using mysqldumb from the MySQL itself, after running the backup of all
