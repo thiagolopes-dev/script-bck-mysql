@@ -1,5 +1,5 @@
 ![bashmini](https://user-images.githubusercontent.com/12428027/37692278-5515c1cc-2c96-11e8-9542-b4502ff6a310.png)
-<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--,/b></center> 
+<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> 
 
 <p align="justify">Script para backup de várias databases MySQL,o script contem informações em todo seu escopo,
 o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o backup de todas as
