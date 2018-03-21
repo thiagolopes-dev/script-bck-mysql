@@ -20,6 +20,14 @@ git clone https://github.com/Th14go/script-bck-mysql
 
 ./script-bck-mysql
 
+Rotina de Backup - Crontab
+
+root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"
+
+00 19 * * * /bck-bases-mysql.sh #Backup será executado todos os dias as 19:00hr
+
+
+
 
 # Script-Backup-Database-MySQL - EN -
 #Thiago Lopes "
@@ -42,4 +50,10 @@ How to use.
 # git clone https://github.com/Th14go/script-bck-mysql
 
 # ./script-bck-mysql
+
+Backup routine - Crontab
+
+root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, under "root"
+
+00 19 * * * /bck-bases-mysql.sh #Backup will run every day at 7:00 pm
 
