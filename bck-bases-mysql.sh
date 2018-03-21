@@ -17,7 +17,7 @@ ZABBIX="/mnt/backup/MySQL/ZABBIX-$DATA.sql"
 #Variáveis do MySQL#
 HOST="localhost"
 USER="root"
-PASSWORD="xgin94hk"
+PASSWORD="suasenha"
 
 #DATABASES#
 DATABASE="fichas"
