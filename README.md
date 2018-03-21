@@ -26,8 +26,12 @@ root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas cro
 
 00 19 * * * /bck-bases-mysql.sh #Backup será executado todos os dias as 19:00hr
 
+Para garantir renicie o serviço do crontab
+
+service crontab restart
 
 
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Script-Backup-Database-MySQL - EN -
 #Thiago Lopes "
@@ -56,4 +60,8 @@ Backup routine - Crontab
 root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, under "root"
 
 00 19 * * * /bck-bases-mysql.sh #Backup will run every day at 7:00 pm
+
+To ensure restart the crontab service
+
+service crontab restart
 
