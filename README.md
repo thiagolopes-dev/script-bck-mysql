@@ -7,18 +7,16 @@ databases, é iniciado o processo de compactação.É gerado LOG de backup e com
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
 <b><i>Editar Váriaveis</b></i><br>
-<b>#Variáveis para SQL dos BCK<b><br>
-<b>#Variáveis do MySQL#</b><br>
+#Variáveis para SQL dos BCK<br>
+#Variáveis do MySQL#<br>
+#Databases#<br>
 
-<b>#DATABASES#</b><br>
-
-Como utilizar.
 
 # git clone https://github.com/Th14go/script-bck-mysql 
 
-<b>./script-bck-mysql<b><br>
+./script-bck-mysql<br>
 
-Rotina de Backup - Crontab<br>
+<b>Rotina de Backup - Crontab<br></b>
 
 root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"<br>
 
