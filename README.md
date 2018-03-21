@@ -28,7 +28,7 @@ service crontab restart<br>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> 
+<p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> </i>
 
 <p align="justify">Script to backup multiple MySQL databases,the script contains information throughout its scope,
 the backup is performed using mysqldumb from the MySQL itself, after running the backup of all
