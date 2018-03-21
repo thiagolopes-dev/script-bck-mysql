@@ -1,13 +1,9 @@
-# Script-Backup-Database-MySQL PT
-#Thiago Lopes"
-Script para backup de várias databases MySQL,
-o script contem informações em todo seu escopo,
-o backup é executado, utilizando o mysqldumb do
-próprio MySQL, após correr o backup de todas as
-databases, é iniciado o processo de compactação.
-É gerado LOG de backup e compactação, para auditoria
-de execução do script posteriormente, fique a vontade 
-de dar dicas e melhorar o script !
+# Script-Backup-Database-MySQL 
+#Thiago Lopes"<br>
+<p align="justify">Script para backup de várias databases MySQL,o script contem informações em todo seu escopo,
+o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o backup de todas as
+databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
+de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
 Editar Váriaveis
 #Variáveis para SQL dos BCK
@@ -33,7 +29,7 @@ service crontab restart
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-# Script-Backup-Database-MySQL - EN -
+# Script-Backup-Database-MySQL 
 #Thiago Lopes "
 Script to backup multiple MySQL databases,
 the script contains information throughout its scope,
