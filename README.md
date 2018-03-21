@@ -1,30 +1,31 @@
 # Script-Backup-Database-MySQL 
-#Thiago Lopes"<br>
+<i>#Thiago Lopes"<br></i>
 <p align="justify">Script para backup de várias databases MySQL,o script contem informações em todo seu escopo,
 o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o backup de todas as
 databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
-Editar Váriaveis
-#Variáveis para SQL dos BCK
-#Variáveis do MySQL#
-#DATABASES#
+<b><i>Editar Váriaveis</b></i><br>
+<b>#Variáveis para SQL dos BCK<b><br>
+<b>#Variáveis do MySQL#</b><br>
+
+<b>#DATABASES#</b><br>
 
 Como utilizar.
 
-git clone https://github.com/Th14go/script-bck-mysql
+# git clone https://github.com/Th14go/script-bck-mysql 
 
-./script-bck-mysql
+<b>./script-bck-mysql<b><br>
 
-Rotina de Backup - Crontab
+Rotina de Backup - Crontab<br>
 
-root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"
+root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"<br>
 
-00 19 * * * /bck-bases-mysql.sh #Backup será executado todos os dias as 19:00hr
+00 19 * * * /bck-bases-mysql.sh #Backup será executado todos os dias as 19:00hr<br>
 
-Para garantir renicie o serviço do crontab
+Para garantir renicie o serviço do crontab<br>
 
-service crontab restart
+service crontab restart<br>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -47,7 +48,7 @@ Edit Variables
 
 How to use.
 
-# git clone https://github.com/Th14go/script-bck-mysql
+#git clone https://github.com/Th14go/script-bck-mysql
 
 # ./script-bck-mysql
 
