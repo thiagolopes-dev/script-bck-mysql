@@ -6,7 +6,7 @@ DATA=`date +%Y-%m-%d-%H.%M`
 
 #Local onde o arquivo de log sera armazenado.
 SYNC_LOG=/var/log/bckmysql/bckmysql$DATA.log
-SYNC_LOGC=/var/log/bckmysql/compmysql$DATA.log
+
 #Variáveis para SQL dos BCK
 FICHAS="/mnt/backup/MySQL/FICHAS-$DATA.sql"
 BRCOM="/mnt/backup/MySQL/BRCOM-$DATA.sql"
@@ -65,16 +65,16 @@ date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 
 #Compacta Databases Mysql#
-echo "******************************" >> $SYNC_LOGC
-echo "Inicio da compactacao do Backup Brcom" >> $SYNC_LOGC
-date >> $SYNC_LOGC
-#echo "******************************" >> $SYNC_LOG
+echo "******************************" >> $SYNC_LOG
+echo "Inicio da compactacao do Backup Brcom" >> $SYNC_LOG
+date >> $SYNC_LOG
+echo "******************************" >> $SYNC_LOG
 cd /mnt/backup/MySQL/
 tar -cvzf DATABASES-$DATA.tar.gz *sql 
-echo "******************************" >> $SYNC_LOGC
-echo "Fim da compactacao Brcom" >> $SYNC_LOGC
-date >> $SYNC_LOGC
-echo "******************************" >> $SYNC_LOGC
+echo "******************************" >> $SYNC_LOG
+echo "Fim da compactacao Brcom" >> $SYNC_LOG
+date >> $SYNC_LOG
+echo "******************************" >> $SYNC_LOG
 
 #Deleta Arquivos SQL  Databases#
 
