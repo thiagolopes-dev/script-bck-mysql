@@ -86,6 +86,6 @@ rsync -Cravp /var/log/bckmysql /mnt/backup/LOG/
 #Apagando-Backup-com+de10dias
 echo "***********INICIO REMOÇÃO REMOTA***************">>$SYNC_LOG
 date >> $SYNC_LOG
-find /mnt/backup/MySQL -mtime +10 -exec rm -rf {} \; >>$SYNC_LOG
+find /mnt/backup/MySQL -mtime +10 -fprint /mnt/backup/LOG/logdelete`date +%F`.txt  -exec rm -rf {} \; >>$SYNC_LOG
 date >> $SYNC_LOG
-echo "**********FIM REMOÇÃO REMOTA*******************">>$SYNC_L
+echo "**********FIM REMOÇÃO REMOTA*******************">>$SYNC_LOG
