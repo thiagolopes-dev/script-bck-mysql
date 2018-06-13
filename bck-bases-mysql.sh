@@ -8,11 +8,11 @@ DATA=`date +%Y-%m-%d-%H.%M`
 SYNC_LOG=/var/log/bckmysql/bckmysql$DATA.log
 
 #Variáveis para SQL dos BCK
-FICHAS="/mnt/backup/MySQL/FICHAS-$DATA.sql"
-BRCOM="/mnt/backup/MySQL/BRCOM-$DATA.sql"
-OFICIO="/mnt/backup/MySQL/OFICIO-$DATA.sql"
-OPENFIRE="/mnt/backup/MySQL/SPARK-$DATA.sql"
-ZABBIX="/mnt/backup/MySQL/ZABBIX-$DATA.sql"
+BASEI="/mnt/backup/MySQL/BASEI-$DATA.sql"
+BASEII="/mnt/backup/MySQL/BASEII-$DATA.sql"
+BASEIII="/mnt/backup/MySQL/BASEIII-$DATA.sql"
+BASEIV="/mnt/backup/MySQL/BASEIV-$DATA.sql"
+BASEV="/mnt/backup/MySQL/BASEV-$DATA.sql"
 
 #Variáveis do MySQL#
 HOST="localhost"
@@ -20,31 +20,30 @@ USER="root"
 PASSWORD="suasenha"
 
 #DATABASES#
-DATABASE="fichas"
-DATABASE2="brcom"
-DATABASE3="oficio"
-DATABASE4="spark"
-DATABASE5="zabbix"
+DATABASEI="BASEI"
+DATABASEII="BASEII"
+DATABASEIII="BASEIII"
+DATABASEIV="BASEIV"
+DATABASEV="BASEV"
 
-#INICIANDO BACKUP;S C/ LOGS#
+#EXECUTANDO BACKUP DE DATABASEI#
 echo "******************************" >> $SYNC_LOG
-echo "Inicio do Backup Database Fichas" >> $SYNC_LOG
+echo "Inicio do Backup Database BASEI" >> $SYNC_LOG
 date >> $SYNC_LOG
-#EXECUTANDO BACKUP DE DATABASE FICHAS#
-mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE > $FICHAS
-echo "Fim do Backup da  Database Fichas" >> $SYNC_LOG
-date >> $SYNC_LOG
-echo "******************************" >> $SYNC_LOG
-echo "Inicio do Backup Database Brcom" >> $SYNC_LOG
-date >> $SYNC_LOG
-#EXECUTANDO BACKUP DE DATABASE BRCOM#
-mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE2 > $BRCOM
-echo "Fim do Backup da  Database Brcom" >> $SYNC_LOG
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEI > $BASEI
+echo "Fim do Backup da  Database BASEI" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
-echo "Inicio do Backup Database Oficio" >> $SYNC_LOG
+echo "Inicio do Backup Database BASEII" >> $SYNC_LOG
 date >> $SYNC_LOG
-#EXECUTANDO BACKUP DE DATABASE OFICIO#
+#EXECUTANDO BACKUP DE DATABASEII#
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEII > $BASEII
+echo "Fim do Backup da  Database BASEII" >> $SYNC_LOG
+date >> $SYNC_LOG
+echo "******************************" >> $SYNC_LOG
+echo "Inicio do Backup Database BASEIII" >> $SYNC_LOG
+date >> $SYNC_LOG
+#EXECUTANDO BACKUP DE DATABASEIII#
 mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE3 > $OFICIO
 echo "Fim do Backup da  Database Oficio" >> $SYNC_LOG
 date >> $SYNC_LOG
