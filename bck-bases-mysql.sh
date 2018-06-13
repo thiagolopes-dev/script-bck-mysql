@@ -31,35 +31,35 @@ echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database Fichas" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASE FICHAS#
-mysqldump -h $HOST -u $USER -p$PASSWORD $DATABASE > $FICHAS
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE > $FICHAS
 echo "Fim do Backup da  Database Fichas" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database Brcom" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASE BRCOM#
-mysqldump -h $HOST -u $USER -p$PASSWORD $DATABASE2 > $BRCOM
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE2 > $BRCOM
 echo "Fim do Backup da  Database Brcom" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database Oficio" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASE OFICIO#
-mysqldump -h $HOST -u $USER -p$PASSWORD $DATABASE3 > $OFICIO
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE3 > $OFICIO
 echo "Fim do Backup da  Database Oficio" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database OpenFire" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASE OPENFIRE#
-mysqldump -h $HOST -u $USER -p$PASSWORD $DATABASE4 > $OPENFIRE
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE4 > $OPENFIRE
 echo "Fim do Backup da  Database OpenFire" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database Zabbix" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASE ZABBIX#
-mysqldump -h $HOST -u $USER -p$PASSWORD $DATABASE5 > $ZABBIX
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE5 > $ZABBIX
 echo "Fim do Backup da  Database Zabbix" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
