@@ -44,36 +44,37 @@ echo "******************************" >> $SYNC_LOG
 echo "Inicio do Backup Database BASEIII" >> $SYNC_LOG
 date >> $SYNC_LOG
 #EXECUTANDO BACKUP DE DATABASEIII#
-mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE3 > $OFICIO
-echo "Fim do Backup da  Database Oficio" >> $SYNC_LOG
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEII > $BASEIII
+echo "Fim do Backup da  Database BASSEIII" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
-echo "Inicio do Backup Database OpenFire" >> $SYNC_LOG
+echo "Inicio do Backup Database BASEIV" >> $SYNC_LOG
 date >> $SYNC_LOG
-#EXECUTANDO BACKUP DE DATABASE OPENFIRE#
-mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE4 > $OPENFIRE
-echo "Fim do Backup da  Database OpenFire" >> $SYNC_LOG
+#EXECUTANDO BACKUP DE DATABASEIV#
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEIV > $BASEIV
+echo "Fim do Backup da  Database BASEIV" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
-echo "Inicio do Backup Database Zabbix" >> $SYNC_LOG
+echo "Inicio do Backup Database BASEV" >> $SYNC_LOG
 date >> $SYNC_LOG
-#EXECUTANDO BACKUP DE DATABASE ZABBIX#
-mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASE5 > $ZABBIX
-echo "Fim do Backup da  Database Zabbix" >> $SYNC_LOG
+#EXECUTANDO BACKUP DE DATABASEV#
+mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEV > $BASEV
+echo "Fim do Backup da  Database BASEV" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
 
 #Compacta Databases Mysql#
 echo "******************************" >> $SYNC_LOG
-echo "Inicio da compactacao do Backup Brcom" >> $SYNC_LOG
+echo "Inicio da compactacao do Backup" >> $SYNC_LOG
 date >> $SYNC_LOG
-echo "******************************" >> $SYNC_LOG
+#echo "******************************" >> $SYNC_LOG
 cd /mnt/backup/MySQL/
 tar -cvzf DATABASES-$DATA.tar.gz *sql 
 echo "******************************" >> $SYNC_LOG
-echo "Fim da compactacao Brcom" >> $SYNC_LOG
+echo "Fim da compactacao" >> $SYNC_LOG
 date >> $SYNC_LOG
 echo "******************************" >> $SYNC_LOG
+
 
 #Deleta Arquivos SQL  Databases#
 
