@@ -30,13 +30,7 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 
 <b>Camada de segurança, requerida pelo gmail.com</b></br>
 set ssl_force_tls = yes
-
-<b><i>Editar Váriaveis do arquivo bck-mysql.sh</b></i><br>
-#Variáveis para SQL dos BCK<br>
-#Variáveis do MySQL#<br>
-#Databases#<br>
-
-
+-----------------------------------------------------------------------------------------------------------------------------
 <b>Rotina de Backup - Crontab<br></b>
 
 root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"<br>
@@ -46,6 +40,11 @@ root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas cro
 Para garantir renicie o serviço do crontab<br>
 
 service crontab restart<br>
+
+<b><i>Editar Váriaveis do arquivo bck-mysql.sh</b></i><br>
+#Variáveis para SQL dos BCK<br>
+#Variáveis do MySQL#<br>
+#Databases#<br>
 
 Execute
 ./bck-mysql.sh  ou sh bck-mysql.sh
