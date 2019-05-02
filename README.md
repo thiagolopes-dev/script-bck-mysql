@@ -41,7 +41,7 @@ set ssl_force_tls = yes
 
 # git clone https://github.com/Th14go/script-bck-mysql 
 
-./script-bck-mysql<br>
+./bck-mysql<br>
 
 <b>Rotina de Backup - Crontab<br></b>
 
@@ -71,7 +71,7 @@ the script afterwards, feel free to give tips and improve the script!</p>
 
 #git clone https://github.com/Th14go/script-bck-mysql
 
-#./script-bck-mysql.sh  ou  sh script-bck-mysql.sh
+#./bck-mysql.sh  ou  sh bck-mysql.sh
 
 <b>Backup routine - Crontab<br></b>
 
