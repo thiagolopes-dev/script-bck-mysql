@@ -11,22 +11,22 @@ sudo apt-get install mutt
 Editar Arquivo de Configuração
 nano ~/.muttrc
 
-# Nome do Remetente
+<b>Nome do Remetente</b>
 set realname="Backup por e-mail"
 
-# Email do Remetente
+<b>Email do Remetente</b>
 set from="seuemail@gmail.com;"
 
-# Usuario da conta de email
+<b>Usuario da conta de email</b>
 set my_user=seuemail@gmail.com
 
-# Senha da conta de email
+<b>Senha da conta de email</b>
 set my_pass='senhaemail'
 
-# Autenticacao no servidor smtp de email, nesse caso do gmail.com
+<b>Autenticacao no servidor smtp de email, nesse caso do gmail.com</b>
 set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 
-# Camada de segurança, requerida pelo gmail.com
+<b>Camada de segurança, requerida pelo gmail.com</b>
 set ssl_force_tls = yes
 
 
