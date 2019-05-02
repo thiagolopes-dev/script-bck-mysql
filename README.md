@@ -31,7 +31,7 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 <b>Camada de segurança, requerida pelo gmail.com</b></br>
 set ssl_force_tls = yes
 
-<b><i>Editar Váriaveis do arquivo bck-bases-mysql.sh</b></i><br>
+<b><i>Editar Váriaveis do arquivo bck-mysql.sh</b></i><br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
 #Databases#<br>
@@ -47,7 +47,8 @@ Para garantir renicie o serviço do crontab<br>
 
 service crontab restart<br>
 
-
+Execute
+./bck-mysql.sh  ou sh bck-mysql.sh
 ---------------------------------------------------------------------------------------------------------------------------------
 <p align="center"><b>---Script-Backup-Database-MySQL --<i>Th14go--</b></center> </i>
 
@@ -63,8 +64,32 @@ the script afterwards, feel free to give tips and improve the script!</p>
 
 <b>How to use.</br></b>
 
-#git clone https://github.com/Th14go/script-bck-mysql
+<b> Configuration to send log by email </ b> </ br>
+sudo apt-get install mutt </ br>
+Edit Configuration File </ br>
+nano ~ / .muttrc
 
+<b> Paste parameters below. </ b> </ br>
+
+<b> Sender Name </ b> </ br>
+set realname = "E-mail Backup"
+
+<b> Sender Email </ b> </ br>
+set from = "seuemail@gmail.com;"
+
+<b> Email account user </ b> </ br>
+set my_user=seuemail@gmail.com
+
+<b> Email account password </ b> </ br>
+set my_pass = 'passwordemail'
+
+<b> Authentication on smtp mail server, in this case gmail.com </ b> </ br>
+set smtp_url = smtps: // $ my_user: $my_pass@smtp.gmail.com
+
+<b> Security layer required by gmail.com </ b> </ br>
+set ssl_force_tls = yes
+
+How to use
 #./bck-mysql.sh  ou  sh bck-mysql.sh
 
 <b>Backup routine - Crontab<br></b>
