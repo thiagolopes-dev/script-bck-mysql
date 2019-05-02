@@ -6,7 +6,12 @@ o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o 
 databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
-<b>Configuração para enviar log por e-mail</b></br>
+<b>Vamos preparar todo o ambiente antes de executar o script</b>
+1. Configuração para enviar log por e-mail</br>
+2. Rotina de Backup</br>
+3. Validar váriaveis do script</br>
+
+<b>1.Configuração para enviar log por e-mail</b></br>
 sudo apt-get install mutt </br>
 Editar Arquivo de Configuração</br>
 nano ~/.muttrc
@@ -30,8 +35,8 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 
 <b>Camada de segurança, requerida pelo gmail.com</b></br>
 set ssl_force_tls = yes
------------------------------------------------------------------------------------------------------------------------------
-<b>Rotina de Backup - Crontab<br></b>
+
+<b>2.Rotina de Backup - Crontab<br></b>
 
 root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"<br>
 
@@ -41,7 +46,7 @@ Para garantir renicie o serviço do crontab<br>
 
 service crontab restart<br>
 
-<b><i>Editar Váriaveis do arquivo bck-mysql.sh</b></i><br>
+<b><i>3.Editar Váriaveis do arquivo bck-mysql.sh</b></i><br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
 #Databases#<br>
