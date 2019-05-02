@@ -64,29 +64,29 @@ the script afterwards, feel free to give tips and improve the script!</p>
 
 <b>How to use.</br></b>
 
-<b> Configuration to send log by email </ b> </ br>
-sudo apt-get install mutt </ br>
-Edit Configuration File </ br>
+<b>Configuration to send log by email </b></br>
+sudo apt-get install mutt </br>
+Edit Configuration File </br>
 nano ~ / .muttrc
 
-<b> Paste parameters below. </ b> </ br>
+<b> Paste parameters below. </b> </br>
 
-<b> Sender Name </ b> </ br>
+<b> Sender Name </b> </br>
 set realname = "E-mail Backup"
 
-<b> Sender Email </ b> </ br>
+<b> Sender Email </b> </br>
 set from = "seuemail@gmail.com;"
 
-<b> Email account user </ b> </ br>
+<b> Email account user </b> </br>
 set my_user=seuemail@gmail.com
 
-<b> Email account password </ b> </ br>
+<b> Email account password </b> </br>
 set my_pass = 'passwordemail'
 
-<b> Authentication on smtp mail server, in this case gmail.com </ b> </ br>
+<b> Authentication on smtp mail server, in this case gmail.com </b> </br>
 set smtp_url = smtps: // $ my_user: $my_pass@smtp.gmail.com
 
-<b> Security layer required by gmail.com </ b> </ br>
+<b> Security layer required by gmail.com </b> </br>
 set ssl_force_tls = yes
 
 How to use
