@@ -6,6 +6,30 @@ o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o 
 databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
+<b>Enviar log por e-mail</b>
+sudo apt-get install mutt 
+Editar Arquivo de Configuração
+nano ~/.muttrc
+# Nome do Remetente
+set realname="Backup por e-mail"
+
+# Email do Remetente
+set from="seuemail@gmail.com;"
+
+# Usuario da conta de email
+set my_user=seuemail@gmail.com
+
+# Senha da conta de email
+set my_pass='senhaemail'
+
+# Autenticacao no servidor smtp de email, nesse caso do gmail.com
+set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
+
+# Camada de segurança, requerida pelo gmail.com
+set ssl_force_tls = yes
+
+
+
 <b><i>Editar Váriaveis</b></i><br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
