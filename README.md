@@ -11,7 +11,7 @@ sudo apt-get install mutt </br>
 Editar Arquivo de Configuração</br>
 nano ~/.muttrc
 
-<b>Colar parametros abaixo.</b></br>
+<b>Colar parâmetros abaixo.</b></br>
 
 <b>Nome do Remetente</b></br>
 set realname="Backup por e-mail"
@@ -32,10 +32,11 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 set ssl_force_tls = yes
 
 
-<b><i>Editar Váriaveis</b></i><br>
+<b><i>Editar Váriaveis do arquivo bck-bases-mysql.sh</b></i><br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
 #Databases#<br>
+
 
 
 # git clone https://github.com/Th14go/script-bck-mysql 
