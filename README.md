@@ -61,14 +61,14 @@ the backup is performed using mysqldumb from the MySQL itself, after running the
 databases, the compression process starts.Backup and compression LOG is generated for auditing
 the script afterwards, feel free to give tips and improve the script!</p>
 
-<b>Edit Variables</br></b>
-#BCK SQL Variables#</br>
-#MySQL Variables #</br>
-#Databases#</br>
+
+<b> Let's prepare the whole environment before running the script </b>
+1. Configuration to send log by email </br>
+2. Backup routine </br>
+3. Validate script variants </br>
 
 
-
-<b>Configuration to send log by email </b></br>
+<b>1.Configuration to send log by email </b></br>
 sudo apt-get install mutt </br>
 Edit Configuration File </br>
 nano ~ / .muttrc
@@ -93,10 +93,7 @@ set smtp_url = smtps: // $ my_user: $my_pass@smtp.gmail.com
 <b> Security layer required by gmail.com </b> </br>
 set ssl_force_tls = yes
 
-<b>How to use.</br></b>
-#./bck-mysql.sh  ou  sh bck-mysql.sh
-
-<b>Backup routine - Crontab<br></b>
+<b>2.Backup routine - Crontab<br></b>
 
 root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, under "root"
 
@@ -105,5 +102,15 @@ root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, und
 To ensure restart the crontab service
 
 service crontab restart
+
+<b><i>3.Editing Bck-mysql.sh File Variables </b> </i></br>
+#BCK SQL Variables# <br>
+#MySQL Variables#<br>
+#Databases#<br>
+
+<b>How to use.</br></b>
+#./bck-mysql.sh  ou  sh bck-mysql.sh
+
+
 
 
