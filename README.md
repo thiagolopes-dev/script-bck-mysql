@@ -31,17 +31,11 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 <b>Camada de segurança, requerida pelo gmail.com</b></br>
 set ssl_force_tls = yes
 
-
 <b><i>Editar Váriaveis do arquivo bck-bases-mysql.sh</b></i><br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
 #Databases#<br>
 
-
-
-# git clone https://github.com/Th14go/script-bck-mysql 
-
-./bck-mysql<br>
 
 <b>Rotina de Backup - Crontab<br></b>
 
