@@ -62,7 +62,7 @@ the script afterwards, feel free to give tips and improve the script!</p>
 #MySQL Variables #</br>
 #Databases#</br>
 
-<b>How to use.</br></b>
+
 
 <b>Configuration to send log by email </b></br>
 sudo apt-get install mutt </br>
@@ -89,7 +89,7 @@ set smtp_url = smtps: // $ my_user: $my_pass@smtp.gmail.com
 <b> Security layer required by gmail.com </b> </br>
 set ssl_force_tls = yes
 
-How to use
+<b>How to use.</br></b>
 #./bck-mysql.sh  ou  sh bck-mysql.sh
 
 <b>Backup routine - Crontab<br></b>
@@ -101,4 +101,5 @@ root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, und
 To ensure restart the crontab service
 
 service crontab restart
+
 
