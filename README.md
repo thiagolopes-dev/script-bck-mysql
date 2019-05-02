@@ -47,7 +47,7 @@ set ssl_force_tls = yes
 
 root@th14golop35:~$  crontab -e   # Inicia tarefa com o agendador de tarefas crontab, em "root"<br>
 
-00 19 * * * /bck-bases-mysql.sh #Backup será executado todos os dias as 19:00hr<br>
+00 19 * * * /bck-mysql.sh #Backup será executado todos os dias as 19:00hr<br>
 
 Para garantir renicie o serviço do crontab<br>
 
@@ -77,7 +77,7 @@ the script afterwards, feel free to give tips and improve the script!</p>
 
 root @ th14golop35: ~ $ crontab -e # Start task with crontab task scheduler, under "root"
 
-00 19 * * * /bck-bases-mysql.sh #Backup will run every day at 7:00 pm
+00 19 * * * /bck-mysql.sh #Backup will run every day at 7:00 pm
 
 To ensure restart the crontab service
 
