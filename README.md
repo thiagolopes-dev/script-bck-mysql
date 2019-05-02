@@ -6,7 +6,7 @@ o backup é executado, utilizando o mysqldumb do próprio MySQL, após correr o 
 databases, é iniciado o processo de compactação.É gerado LOG de backup e compactação, para auditoria
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
-<b>Enviar log por e-mail</b></br>
+<b>Configuração para enviar log por e-mail</b></br>
 sudo apt-get install mutt </br>
 Editar Arquivo de Configuração</br>
 nano ~/.muttrc
