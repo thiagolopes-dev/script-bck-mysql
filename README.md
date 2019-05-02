@@ -10,6 +10,7 @@ de execução do script posteriormente, fique a vontade de dar dicas e melhorar 
 sudo apt-get install mutt 
 Editar Arquivo de Configuração
 nano ~/.muttrc
+
 # Nome do Remetente
 set realname="Backup por e-mail"
 
@@ -27,7 +28,6 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 
 # Camada de segurança, requerida pelo gmail.com
 set ssl_force_tls = yes
-
 
 
 <b><i>Editar Váriaveis</b></i><br>
