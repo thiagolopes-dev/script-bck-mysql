@@ -7,7 +7,7 @@ databases, é iniciado o processo de compactação.É gerado LOG de backup e com
 de execução do script posteriormente, fique a vontade de dar dicas e melhorar o script !</p>
 
 <b>Enviar log por e-mail</b></br>
-sudo apt-get install mutt 
+sudo apt-get install mutt </br>
 Editar Arquivo de Configuração</br>
 nano ~/.muttrc
 
