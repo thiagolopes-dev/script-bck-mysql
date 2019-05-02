@@ -71,7 +71,7 @@ the script afterwards, feel free to give tips and improve the script!</p>
 
 #git clone https://github.com/Th14go/script-bck-mysql
 
-#./script-bck-mysql
+#./script-bck-mysql.sh  ou  sh script-bck-mysql.sh
 
 <b>Backup routine - Crontab<br></b>
 
