@@ -56,7 +56,7 @@ service crontab restart<br>
 Instalar <b>MegaCMD</b> conforme distro. <a href="https://mega.nz/cmd">clique aqui></a></br>
 <i>Comandos Mega</i>
 <b>
-mega-login emailcadastrado@gmail.com suasenha
+mega-login emailcadastrado@gmail.com suasenha </br>
   mega-put  arquivo.txt /diretorioMega  -- Enviar Arquivos</br>
   mega-rm arquivo.txt /diretorioMega   --Excluir Arquivos </br>
 </b>
