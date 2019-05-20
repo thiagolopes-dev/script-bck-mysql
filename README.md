@@ -18,22 +18,22 @@ nano ~/.muttrc
 
 <b>Colar parâmetros abaixo.</b></br>
 
-<b>Nome do Remetente</b></br>
+<b>#Nome do Remetente#</b></br>
 set realname="Backup por e-mail"
 
-<b>Email do Remetente</b></br>
+<b>#Email do Remetente#</b></br>
 set from="seuemail@gmail.com;"
 
-<b>Usuario da conta de email</b></br>
+<b>#Usuario da conta de email#</b></br>
 set my_user=seuemail@gmail.com
 
-<b>Senha da conta de email</b></br>
+<b>#Senha da conta de email#</b></br>
 set my_pass='senhaemail'
 
-<b>Autenticacao no servidor smtp de email, nesse caso do gmail.com</b></br>
+<b>#Autenticacao no servidor smtp de email, nesse caso do gmail.com#</b></br>
 set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 
-<b>Camada de segurança, requerida pelo gmail.com</b></br>
+<b>#Camada de segurança, requerida pelo gmail.com#</b></br>
 set ssl_force_tls = yes
 
 <b>2.Rotina de Backup - Crontab<br></b>
