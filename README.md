@@ -10,6 +10,7 @@ de execução do script posteriormente, fique a vontade de dar dicas e melhorar 
 1. Configuração para enviar log por e-mail</br>
 2. Rotina de Backup</br>
 3. Validar váriaveis do script</br>
+4. Enviando database para cloud Mega.nz
 
 <b>1.Configuração para enviar log por e-mail</b></br>
 sudo apt-get install mutt </br>
@@ -50,6 +51,10 @@ service crontab restart<br>
 #Variáveis para SQL dos BCK<br>
 #Variáveis do MySQL#<br>
 #Databases#<br>
+
+4. <b>Configurar Mega.nz para envio de database para cloud</b></br>
+Instalar <b>MegaCMD conforme distro. <a href="https://mega.nz/cmd">clique aqui></a></br>
+
 
 Execute
 ./bck-mysql.sh  ou sh bck-mysql.sh
