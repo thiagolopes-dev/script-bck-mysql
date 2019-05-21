@@ -90,6 +90,12 @@ find /mnt/backup/MySQL -mtime +10 -fprint /mnt/backup/LOG/logdelete`date +%F`.tx
 date >> $SYNC_LOG
 echo "**********FIM REMOÇÃO REMOTA*******************">>$SYNC_LOG
 
+#Envia Database compactada para cloud Mega#
+echo "********Upload Arquivos para Mega****">> $LOG
+mega-login seuemail@gmail.com suasenha
+mega-put /mysqlbackup/* /bck-database >> $LOG
+
+
 #Enviar log por email
 echo 'Anexo log de Backup' | mutt -s 'Backup Databases MySQL' -a /var/log/bckmysql/bckmysql-$DATA.log -- seuemail@gmail.com.br
 
