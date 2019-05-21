@@ -53,13 +53,13 @@ service crontab restart<br>
 #Databases#<br>
 
 4. <b>Configurar Mega.nz para envio de database para cloud</b></br>
-Instalar <b>MegaCMD</b> conforme distro. <a href="https://mega.nz/cmd">clique aqui></a></br>
+Instalar <b>MegaCMD</b> conforme distro. <a href="https://mega.nz/cmd">clique aqui</a></br>
 <i>Comandos Mega</i>
-<b>
+
 mega-login emailcadastrado@gmail.com suasenha </br>
   mega-put  arquivo.txt /diretorioMega  -- Enviar Arquivos</br>
   mega-rm arquivo.txt /diretorioMega   --Excluir Arquivos </br>
-</b>
+
 
 Execute
 ./bck-mysql.sh  ou sh bck-mysql.sh
@@ -76,6 +76,7 @@ the script afterwards, feel free to give tips and improve the script!</p>
 1. Configuration to send log by email </br>
 2. Backup routine </br>
 3. Validate script variants </br>
+4. Config Mega.nz send file to Cloud</br> 
 
 
 <b>1.Configuration to send log by email </b></br>
@@ -117,6 +118,14 @@ service crontab restart
 #BCK SQL Variables# <br>
 #MySQL Variables#<br>
 #Databases#<br>
+
+4. <b>Config Mega.nz to send file Cloud</b></br>
+Install <b>MegaCMD</b><a href="https://mega.nz/cmd">Click Here</a></br>
+<i>Command Mega</i>
+
+mega-login emailregister@gmail.com password </br>
+  mega-put  file.txt /path/toMega  -- Send File</br>
+  mega-rm arquivo.txt /path/ToMega   --Delete File</br>
 
 <b>How to use.</br></b>
 #./bck-mysql.sh  ou  sh bck-mysql.sh
