@@ -11,6 +11,8 @@ de execução do script posteriormente, fique a vontade de dar dicas e melhorar 
 2. Rotina de Backup</br>
 3. Validar váriaveis do script</br>
 4. Enviando database para cloud Mega.nz
+5. Backup Somente Dados sem Estrutura Database
+6. Ignorar Table em Backup
 
 <b>1.Configuração para enviar log por e-mail</b></br>
 sudo apt-get install mutt </br>
@@ -59,6 +61,16 @@ Instalar <b>MegaCMD</b> conforme distro. <a href="https://mega.nz/cmd">clique aq
 mega-login emailcadastrado@gmail.com suasenha </br>
   mega-put  arquivo.txt /diretorioMega  -- Enviar Arquivos</br>
   mega-rm arquivo.txt /diretorioMega   --Excluir Arquivos </br>
+  
+ 5. <b> Se você optar para que o backup seja feito somente com dados acrescente o comando "--no-create-info" no final da linha do dump ficando assim:</b><br>
+ Ex:  mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEI --no-create-info > $BASEI
+ 
+ 6. <b> Comando para ignorar table em Backup</b>
+ faça uma variavel para armazenar o valor da database.table
+ 
+ ex:  ignore=database.table1
+ 
+ ex: mysqldump --routines --triggers -h $HOST -u $USER -p$PASSWORD $DATABASEI --no-create-info --ignore-table=$ignore > $BASEI
 
 
 Execute
